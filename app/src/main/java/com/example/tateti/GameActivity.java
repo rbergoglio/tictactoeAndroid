@@ -8,6 +8,8 @@ import android.widget.TextView;
 public class GameActivity extends AppCompatActivity {
 
     private TextView playerName;
+    private TextView playerSymbol;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,8 +20,8 @@ public class GameActivity extends AppCompatActivity {
         playerName.setText("Bienvenido "+ name);
 
         String symbol = getIntent().getStringExtra("symbol");
-        playerName = findViewById(R.id.textViewPlayerName);
-        playerName.setText("Bienvenido "+ symbol);
+        playerSymbol= findViewById(R.id.textViewPlayerSymbol);
+        playerSymbol.setText("Juega con "+ symbol);
 
     }
 }

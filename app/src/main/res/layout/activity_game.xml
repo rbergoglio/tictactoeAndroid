@@ -28,8 +28,9 @@
                 android:layout_below="@+id/idTextViewTaTeTi"
                 android:layout_centerHorizontal="true"
                 android:text="Bienvenido xxxxxx" />
+
             <TextView
-                android:id="@+id/idtextViewSecondPlayerName"
+                android:id="@+id/textViewPlayerSymbol"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textViewPlayerName"
