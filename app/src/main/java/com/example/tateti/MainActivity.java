@@ -39,15 +39,14 @@ public class MainActivity extends AppCompatActivity {
                 radioGropSymbol= findViewById(idRadio);
                 symbol = radioGropSymbol.getText().toString();
 
-
-                if(name != ""){
+                if(!name.isEmpty()){
                     Intent i = new Intent(MainActivity.this, GameActivity.class);
                     i.putExtra("name",name);
                     i.putExtra("symbol",symbol);
                     startActivity(i);
                 }
                 else{
-                    Log.d("myTag", "This is my message");
+                    Log.d("myTag", "error");
                 }
 
             }
